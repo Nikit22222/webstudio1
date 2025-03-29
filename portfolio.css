@@ -1,6 +1,117 @@
 :root{
+    --text2-color: #000;
     --text-color: #212121;
     --підпис-color: #757575;
     --footer-color: #2F303A;
     --почта-color: #2196F3;
+    --main-color: #ffffff;
+    --main2-color: #F5F4FA;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+}
+/*header*/
+.header{
+    color: var(--main-color);
+}
+.header > a{
+    color: var(--text2-color);
+}
+.header nav ul li:first-child a {
+    color: var(--text-color);
+}
+.header nav ul li:nth-child(2) a{
+    color: var(--почта-color);
+}
+.header nav ul li:nth-child(3) a{
+    color: var(--text-color);
+}
+.header ul li:first-child a{
+    color: var(--почта-color);
+}
+.header ul li:last-child a{
+    color: var(--підпис-color);
+}
+/*section 1*/
+.section-1 nav:first-of-type ul li:nth-of-type(1) a{
+    background-color: var(--почта-color);
+    color: var(--main-color);
+}
+.section-1 nav:first-of-type ul li:nth-of-type(2) a,
+.section-1 nav:first-of-type ul li:nth-of-type(3) a,
+.section-1 nav:first-of-type ul li:nth-of-type(4) a,
+.section-1 nav:first-of-type ul li:nth-of-type(5) a{
+    background-color: var(--main2-color);
+    color: var(--text-color);
+}
+.section-1 nav ul li:first-of-type a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:first-of-type p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(1) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(1) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(2) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(2) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(3) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(3) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(4) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(4) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(5) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(5) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(6) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(6) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:nth-of-type(7) a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:nth-of-type(7) p{
+    color: var(--підпис-color);
+}
+.section-1 nav ul li:last-of-type a{
+    color: var(--text-color);
+}
+.section-1 nav ul li:last-of-type p{
+    color: var(--підпис-color);
+}
+/*footer*/
+.footer{
+    background-color: var(--footer-color);
+}
+.footer > a{
+    color: var(--main-color);
+}
+.footer address ul li:first-of-type a{
+    color: var(--main-color);
+}
+.footer address ul li:nth-of-type(2) a{
+    color: var(--підпис-color);
+}
+.footer address ul li:nth-of-type(3) a{
+    color: var(--підпис-color);
 }

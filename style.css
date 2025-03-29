@@ -3,5 +3,121 @@
     --text-color: #757575;
     --text2-color: #212121;
     --section1-color: #2F303A;
-    --section3-color: #F5F4FA;
+    --section4-color: #F5F4FA;
+    --main-color: #ffffff;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+}
+/*header*/
+.header{
+    background-color: var(--main-color);
+}
+.header > a{
+    color: var(--text2-color);
+}
+.header nav ul li:first-child a {
+    color: var(--посилання-color);
+}
+.header nav ul li:nth-child(2) a,
+.header nav ul li:nth-child(3) a{
+    color: var(--text2-color);
+}
+.header ul li:first-child a{
+    color: var(--посилання-color);
+}
+.header ul li:last-child a{
+    color: var(--text-color);
+}
+/*section 1*/
+.section-1{
+    background-color: var(--section1-color);
+}
+.section-1 h1{
+    color: var(--main-color)
+}
+.section-1 button{
+    background-color: var(--посилання-color);
+    color: var(--main-color);
+    border: none;
+}
+/*section 2*/
+.section-2 ul li h2:first-of-type{
+    color: var(--text2-color);
+}
+.section-2 ul li p:first-of-type{
+    color: var(--text-color);
+}
+.section-2 ul li h2:nth-of-type(2){
+    color: var(--text2-color);
+}
+.section-2 ul li p:nth-of-type(2){
+    color: var(--text-color);
+}
+.section-2 ul li h2:nth-of-type(3){
+    color: var(--text2-color);
+}
+.section-2 ul li p:nth-of-type(3){
+    color: var(--text-color);
+}
+.section-2 ul li h2:nth-of-type(4){
+    color: var(--text2-color);
+}
+.section-2 ul li p:nth-of-type(4){
+    color: var(--text-color);
+}
+/*section 3*/
+.section-3{
+    background-color: var(--main-color);
+}
+.section-3 h2{
+    color: var(--text2-color);
+}
+/*section 4*/
+.section-4{
+    background-color: var(--section4-color);
+}
+.section-4 h2{
+    color: var(--text2-color);
+}
+.section-4 ul li:first-of-type h3{
+    color: var(--text2-color);
+}
+.section-4 ul li:first-of-type p{
+    color: var(--text-color);
+}
+.section-4 ul li:nth-of-type(2) h3{
+    color: var(--text2-color);
+}
+.section-4 ul li:nth-of-type(2) p {
+    color: var(--text-color);
+}
+.section-4 ul li:nth-of-type(3) h3{
+    color: var(--text2-color);
+}
+.section-4 ul li:nth-of-type(3) p{
+    color: var(--text-color);
+}
+.section-4 ul li:nth-of-type(4) h3{
+    color: var(--text2-color);
+}
+.section-4 ul li:nth-of-type(4) p{
+    color: var(--text-color);
+}
+/*footer*/
+.footer{
+    background-color: var(--section1-color);
+}
+.footer > a{
+    color: var(--main-color);
+}
+.footer address ul li:first-of-type a{
+    color: var(--main-color);
+}
+.footer address ul li:nth-of-type(2) a{
+    color: var(--text-color);
+}
+.footer address ul li:nth-of-type(3) a{
+    color: var(--text-color);
 }
