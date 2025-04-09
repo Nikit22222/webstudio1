@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
        <!--header-->
        <header class="header">
-        <a href="../page1/index.html" class="header-title">WebStudio</a>
-        <nav>
+        <a href="./index.html" class="header-title">
+                <span style="color: #2196F3;">Web</span><span style="color: #000;">Studio</span>              
+        </a>
+        <nav class="header-nav">
             <ul class="header-nav-list">
-                <li><a href="./index.html" class="header-nav-a1">Студія</a></li>
-                <li><a href="./portfolio.html" class="header-nav-a2">Портфоліо</a></li>
-                <li><a href="./portfolio.html" class="header-nav-a3">Контакти</a></li>
+                <li><a href="./index.html" class="header--list">Студія</a></li>
+                <li><a href="./portfolio.html" class="header-list">Портфоліо</a></li>
+                <li><a href="./index.html" class="header-list">Контакти</a></li>
             </ul>
         </nav>
         <ul>
@@ -40,14 +42,14 @@
     <section class="advantages">
             <ul>
                 <li>
-                    <h2 class="advantages-title-1">УВАГА ДО ДЕТАЛЕЙ</h2>
-                    <p class="advantages-text-1">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    <h2 class="advantages-title-2">ПУНКТУАЛЬНІСТЬ</h2>
-                    <p class="advantages-text-2">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    <h2 class="advantages-title-3">ПЛАНУВАННЯ</h2>
-                    <p class="advantages-text-3">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    <h2 class="advantages-title-4">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                    <p class="advantages-text-4">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <h2 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+                    <p class="advantages-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <h2 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h2>
+                    <p class="advantages-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <h2 class="advantages-title">ПЛАНУВАННЯ</h2>
+                    <p class="advantages-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <h2 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                    <p class="advantages-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
     </section>
@@ -56,13 +58,13 @@
         <h2 class="work-title">Чим ми займаємося</h2>
             <ul>
                 <li>
-                    <img class="work-img-1" src="./img/img.png" alt="photo">
+                    <img class="work-img" src="./img/img.png" alt="photo">
                 </li>
                 <li>
-                    <img class="work-img-2" src="./img/img(1).png" alt="photo">
+                    <img class="work-img" src="./img/img(1).png" alt="photo">
                 </li>
                 <li>
-                    <img class="work-img-3" src="./img/img(2).png" alt="photo">
+                    <img class="work-img" src="./img/img(2).png" alt="photo">
                 </li>
             </ul>
     </section>
@@ -71,31 +73,33 @@
         <h2 class="team-title">Наша команда</h2>
         <ul>
             <li>
-                <img class="team-img-1" src="./img/img.jpg" alt="photo">
-                <h3 class="team-name-1">Ігор Дем'яненко</h3>
-                <p class="team-text-1">Product Designer</p>
+                <img class="team-img" src="./img/img.jpg" alt="photo">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-text">Product Designer</p>
             </li>
             <li>
-                <img class="team-img-2" src="./img/img(1)ч.jpg" alt="photo">
-                <h3 class="team-name-2">Ольга Рєпіна</h3>
-                <p class="team-text-2">Frontend Developer</p>
+                <img class="team-img" src="./img/img(1)ч.jpg" alt="photo">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-text">Frontend Developer</p>
             </li>
             <li>
-                <img class="team-img-3" src="./img/img(2)ч.jpg" alt="photo">
-                <h3 class="team-name-3">Микола Тарасов</h3>
-                <p class="team-text-3">Marketing</p>
+                <img class="team-img" src="./img/img(2)ч.jpg" alt="photo">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-text">Marketing</p>
             </li>
             <li>
-                <img class="team-img-4" src="./img/img(3)ч.jpg" alt="photo">
-                <h3 class="team-name-4">Михайло Єрмаков</h3>
-                <p class="team-text-4">UI Designer</p>
+                <img class="team-img" src="./img/img(3)ч.jpg" alt="photo">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-text">UI Designer</p>
             </li>
         </ul>
     </section>
     </main>
     <!--footer-->
     <footer class="footer">
-        <a href="./portfolio.html" class="footer-title">WebStudio</a>
+        <a href="./index.html" class="footer-title">
+            <span style="color: #2196F3;">Web</span><span style="color: #fff;">Studio</span>
+        </a>
         <address>
             <ul>
                 <li>

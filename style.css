@@ -12,10 +12,9 @@
 }
 /*header*/
 .header {
-    background: #FFF;
+    background: var(--main-color);
 }
 .header-title {
-    color: #000;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -23,24 +22,16 @@
     letter-spacing: 0.78px;
 
 }
-.header-nav-a1 {
-    color: #2196F3;
+.header--list {
+    color: var(--посилання-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.header-nav-a2 {
-    color: #212121;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header-nav-a3 {
-    color: #212121;
+.header-list {
+    color: var(--text2-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -48,7 +39,7 @@
     letter-spacing: 0.28px;
 }
 .header-gmail {
-    color: #2196F3;
+    color: var(--посилання-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -56,7 +47,7 @@
     letter-spacing: 0.28px;
 }
 .header-num {
-    color: #757575;
+    color: var(--text-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -65,12 +56,12 @@
 }
 /*hero*/
 .hero {
-    background: #2F303A;
+    background: var(--section1-color);
 }
 .hero-title {
     width: 696px;
     flex-shrink: 0;
-    color: #FFF;
+    color: var(--main-color);
     text-align: center;
     font-size: 44px;
     font-style: normal;
@@ -84,9 +75,9 @@
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: #2196F3;
+    background: var(--посилання-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: var(--main-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -97,10 +88,10 @@
 }
 /*advantages*/
 .advantages {
-    background: #FFF;
+    background: var(--main-color);
 }
-.advantages-title-1 {
-    color: #212121;
+.advantages-title {
+    color: var(--text2-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -108,65 +99,8 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-.advantages-text-1 {
-    color: #757575;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71; 
-    letter-spacing: 0.42px;
-}
-.advantages-title-2 {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-.advantages-text-2 {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71; 
-    letter-spacing: 0.42px;
-}
-.advantages-title-3 {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-.advantages-text-3 {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71; 
-    letter-spacing: 0.42px;
-}
-.advantages-title-4 {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-.advantages-text-4 {
-    color: #757575;
-    font-family: Roboto;
+.advantages-text {
+    color: var(--text-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -175,10 +109,10 @@
 }
 /*work*/
 .work {
-    background: #FFF;
+    background: var(--main-color);
 }
 .work-title {
-    color: #212121;
+    color: var(--text2-color);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -187,27 +121,27 @@
     line-height: 1.16;
     letter-spacing: 1.08px;
 }
-.work-img-1 {
+.work-img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
-.work-img-2 {
+.work-img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
-.work-img-3 {
+.work-img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
 /*team*/
 .team {
-    background: #F5F4FA;
+    background: var(--section4-color);
 }
 .team-title {
-    color: #212121;
+    color: var(--text2-color);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -216,13 +150,13 @@
     line-height: 1.16;
     letter-spacing: 1.08px;
 }
-.team-img-1 {
+.team-img {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
 }
-.team-name-1 {
-    color: #212121;
+.team-name {
+    color: var(--text2-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -231,83 +165,8 @@
     line-height: 1.18;
     letter-spacing: 0.48px;
 }
-.team-text-1 {
-    color: #757575;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-img-2 {
-    width: 270px;
-    height: 260px;
-    flex-shrink: 0;
-}
-.team-name-2 {
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-text-2 {
-    color: #757575;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-img-3 {
-    width: 270px;
-    height: 260px;
-    flex-shrink: 0;
-}
-.team-name-3 {
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-text-3 {
-    color: #757575;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-img-4 {
-    width: 270px;
-    height: 260px;
-    flex-shrink: 0;
-}
-.team-name-4 {
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-text-4 {
-    color: #757575;
+.team-text {
+    color: var(--text-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -318,10 +177,10 @@
 }
 /*footer*/
 .footer {
-    background: #2F303A;
+    background: var(--section1-color);
 }
 .footer-title {
-    color: #FFF;
+    color: var(--main-color);
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -330,7 +189,7 @@
     letter-spacing: 0.78px;
 }
 .footer-maps {
-    color: #FFF;
+    color: var(--main-color);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
