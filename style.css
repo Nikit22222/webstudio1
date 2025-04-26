@@ -5,14 +5,31 @@
     --section1-color: #2F303A;
     --section4-color: #F5F4FA;
     --main-color: #ffffff;
+    --logo-color: #000;
 }
-*{
-    text-decoration: none;
-    list-style: none;
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
 }
 /*header*/
 .header {
     background: var(--main-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-web{
+    color: var(--посилання-color);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
 }
 .header-title {
     font-size: 26px;
@@ -20,17 +37,11 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    color: var(--logo-color);
+    margin-right: 93px;
 
 }
-.header--list {
-    color: var(--посилання-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header-list {
+.header-link {
     color: var(--text2-color);
     font-size: 14px;
     font-style: normal;
@@ -38,7 +49,7 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.header-gmail {
+.header-link:hover {
     color: var(--посилання-color);
     font-size: 14px;
     font-style: normal;
@@ -46,8 +57,25 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.header-num {
-    color: var(--text-color);
+.header-contacts{
+    display: flex;
+    gap: 50px;
+}
+.header-list{
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+.header-contact{
+    color: var(--text2-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+.header-contact:hover {
+    color: var(--посилання-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -57,6 +85,8 @@
 /*hero*/
 .hero {
     background: var(--section1-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     width: 696px;
@@ -69,6 +99,9 @@
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .hero-button {
     width: 216px;

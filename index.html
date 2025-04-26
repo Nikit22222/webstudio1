@@ -8,69 +8,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href=".reset.css">
 </head>
 <body>
        <!--header-->
        <header class="header">
+        <div class="container">
         <a href="./index.html" class="header-title">
-                <span style="color: #2196F3;">Web</span><span style="color: #000;">Studio</span>              
+                <span class="header-web">Web</span>Studio
         </a>
         <nav class="header-nav">
             <ul class="header-contacts">
-                <li><a href="./index.html" class="header--list">Студія</a></li>
-                <li><a href="./portfolio.html" class="header-list">Портфоліо</a></li>
-                <li><a href="./index.html" class="header-list">Контакти</a></li>
+                <li><a href="./index.html" class="header-link">Студія</a></li>
+                <li><a href="./portfolio.html" class="header-link">Портфоліо</a></li>
+                <li><a href="./index.html" class="header-link">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="	header-contact-list">
-            <li class="header-contact-item">
-                <a href="mailto:info@devstudio.com" class="header-gmail">info@devstudio.com</a>
+        <ul class="header-list">
+            <li class="header-item">
+                <a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a>
             </li>
-            <li class="	header-contact-item">
-                <a href="tel:+380961111111" class="header-num">+38 096 111 11 11</a>
+            <li class="header-contact-item">
+                <a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a>
             </li>
         </ul>
+    </div>
     </header> 
     <!--section 1-->
     <main>
     <section class="hero">
+        <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-button">Замовити послугу</button>
+    </div>
     </section>
     <!--section 2-->
     <section class="advantages">
-            <ul class="	advantages-list">
-                <li class="	advantages-list-item">
+        <div class="container">
+            <ul class="advantages-list">
+                <li class="advantages-item">
                     <h2 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h2>
                     <p class="advantages-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
+                <li class="advantages-item">
                     <h2 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h2>
                     <p class="advantages-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </li>
+                <li class="advantages-item">
                     <h2 class="advantages-title">ПЛАНУВАННЯ</h2>
                     <p class="advantages-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li class="advantages-item">
                     <h2 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                     <p class="advantages-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
+        </div>
     </section>
     <!--section 3-->
     <section class="work">
+        <div class="container">
         <h2 class="work-title">Чим ми займаємося</h2>
-            <ul class="	work-list">
-                <li class="	work-list-item">
+            <ul class="work-list">
+                <li class="	work-item">
                     <img class="work-img" src="./img/img.png" alt="photo">
                 </li>
-                <li class="	work-list-item">
+                <li class="work-list-item">
                     <img class="work-img" src="./img/img(1).png" alt="photo">
                 </li>
-                <li class="	work-list-item">
+                <li class="work-list-item">
                     <img class="work-img" src="./img/img(2).png" alt="photo">
                 </li>
             </ul>
+        </div>
     </section>
     <!--section 4-->
     <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="	team-list">
             <li class="team-member">
@@ -94,10 +109,12 @@
                 <p class="team-text">UI Designer</p>
             </li>
         </ul>
+        </div>
     </section>
     </main>
     <!--footer-->
     <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="footer-title">
             <span style="color: #2196F3;">Web</span><span style="color: #fff;">Studio</span>
         </a>
@@ -114,6 +131,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>

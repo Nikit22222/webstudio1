@@ -7,11 +7,7 @@
     --main-color: #ffffff;
     --main2-color: #F5F4FA;
 }
-*{
-    text-decoration: none;
-    list-style: none;
-}
-/* === Header === */
+/*Header*/
 .header {
     background-color: var(--main-color);
 }
