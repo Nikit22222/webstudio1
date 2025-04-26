@@ -121,6 +121,7 @@
 /*advantages*/
 .advantages {
     background: var(--main-color);
+    padding-top: 94px;
 }
 .advantages-title {
     color: var(--text2-color);
@@ -142,6 +143,8 @@
 /*work*/
 .work {
     background: var(--main-color);
+    padding-top: 118px;
+    padding-bottom: 94px;
 }
 .work-title {
     color: var(--text2-color);
@@ -170,6 +173,8 @@
 /*team*/
 .team {
     background: var(--section4-color);
+    padding-top: 94px;
+    padding-bottom: 124px;
 }
 .team-title {
     color: var(--text2-color);
@@ -206,6 +211,8 @@
 /*footer*/
 .footer {
     background: var(--section1-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-title {
     color: var(--main-color);
