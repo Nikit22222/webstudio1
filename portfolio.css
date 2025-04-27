@@ -148,6 +148,12 @@
     color: var(--main-color);
 
 }
+.projets-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
 .projects-img {
     width: 370px;
     height: 294px;
