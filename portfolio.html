@@ -8,46 +8,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href=".reset.css">
 </head>
 <body>
         <!--header-->
         <header class="header">
-            <a href="./portfolio.html " class="header-title">
-                <span style="color: #2196F3;">Web</span><span style="color: #000;">Studio</span>    
+            <div class="container">
+            <a href="./portfolio.html" class="header-title">
+                    <span class="header-web">Web</span>Studio
             </a>
             <nav class="header-nav">
-                <ul class="header-nav-list">
-                    <li><a href="./index.html" class="header-list">Студія</a></li>
-                    <li><a href="./portfolio.html" class="header--list">Портфоліо</a></li>
-                    <li><a href="./portfolio.html" class="header-list">Контакти</a></li>
+                <ul class="header-contacts">
+                    <li><a href="./index.html" class="header-link">Студія</a></li>
+                    <li><a href="./portfolio.html" class="header-link">Портфоліо</a></li>
+                    <li><a href="./portfolio.html" class="header-link">Контакти</a></li>
                 </ul>
             </nav>
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com" class="header-gmail">info@devstudio.com</a>
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111" class="header-num">+38 096 111 11 11</a>
+                <li class="header-contact-item">
+                    <a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
         </header> 
         <main>
             <!--section 1-->
             <section class="projects">
-            <nav>
-                <ul>
-                    <li><a href="./portfolio.html" class="projects--nav">Усі</a></li>
-                    <li><a href="./portfolio.html" class="projects-nav">Веб-сайти</a></li>
-                    <li><a href="./portfolio.html" class="projects-nav">Додатки</a></li>
-                    <li><a href="./portfolio.html" class="projects-nav">Дизайн</a></li>
-                    <li><a href="./portfolio.html" class="projects-nav">Маркетинг</a></li>
+                <div class="container">
+                <ul class="projects-list">
+                    <li><a href="./portfolio.html" class="projects-item">Усі</a></li>
+                    <li><a href="./portfolio.html" class="projects-item">Веб-сайти</a></li>
+                    <li><a href="./portfolio.html" class="projects-item">Додатки</a></li>
+                    <li><a href="./portfolio.html" class="projects-item">Дизайн</a></li>
+                    <li><a href="./portfolio.html" class="projects-item">Маркетинг</a></li>
                 </ul>
-            </nav>
-            <nav>
                 <ul>
-                    <li class="projects-li-container">
+                    <li class="projects-container">
                         <img src="./img2/img-(1).png" alt="photo" class="projects-img">
                         <a href="./portfolio.html" class="projets-link">Технокряк</a>
                         <p class="projets-text">Веб-сайт</p>
@@ -93,22 +93,24 @@
                         <p class="projets-text">Додаток</p>
                     </li>
                 </ul>
-            </nav>
+                </div>
             </section>
         </main>
         <!--footer-->
         <footer class="footer">
-            <a href="./portfolio.html" class="footer-title">WebStudio</a>
+            <a href="./portfolio.html" class="footer-title">
+                <span class="footer-web">Web</span>Studio
+            </a>
             <address>
                 <ul>
                     <li>
                         <a target="_blank" class="footer-maps" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.5190836,30.4359387,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!16s%2Fg%2F11hz60_tnl?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" class="ft-a-2">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
                     <li>
-                        <a href="mailto:info@devstudio.com" class="footer-gmail">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a href="tel:+380961111111" class="footer-num">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>

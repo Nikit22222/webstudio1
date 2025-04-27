@@ -7,76 +7,127 @@
     --main-color: #ffffff;
     --main2-color: #F5F4FA;
 }
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.body{
+    font-family: "Roboto", sans-serif;
+}
 /*Header*/
 .header {
-    background-color: var(--main-color);
+    background: var(--main-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-web{
+    color: var(--почта-color);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    font-family: "Raleway", sans-serif;
+}
+.header .container{
+    display: flex;
+    align-items: center;
 }
 .header-title {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.38;
     letter-spacing: 0.78px;
-}
-.header-list {
-    color: var(--text-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header--list {
-    color: var(--почта-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header-list {
-    color: var(--text-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header-gmail {
-    color: var(--почта-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.header-num {
-    color: var(--підпис-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
+    color: var(--logo-color);
+    margin-right: 93px;
 
+}
+.header-link {
+    color: var(--text2-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+.header-link:hover {
+    color: var(--почта-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+.header-contacts{
+    display: flex;
+    gap: 50px;
+}
+.header-list{
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+.header-contact{
+    color: var(--text2-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+.header-contact:hover {
+    color: var(--почта-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+/*hero*/
+.hero {
+    background: var(--section1-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.hero-title {
+    width: 696px;
+    flex-shrink: 0;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.hero-button {
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--посилання-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--main-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+}
 /*Projects Section*/
 .projects {
     background: var(--main-color);
 }
-.projects--nav {
-    background-color: var(--почта-color);
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-}
-.projects-nav {
+.projects-item{
+    width: 125px;
+    height: 38px;
+    flex-shrink: 0;
     border-radius: 4px;
     background: var(--main2-color);
     color: var(--text-color);
@@ -84,8 +135,18 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.62; 
-    letter-spacing: 0.48px;
+    line-height: 26px; 
+    letter-spacing: 0.48px; 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+
+}
+.projects-item:hover {
+    background: var(--почта-color);
+    color: var(--main-color);
+
 }
 .projects-img {
     width: 370px;
@@ -112,6 +173,15 @@
 .footer {
     background: #2F303A;
 }
+.footer-web{
+    color: var(--почта-color);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    font-family: "Raleway", sans-serif;
+}
 .footer-title {
     color: var(--main-color); 
     font-size: 26px;
@@ -128,15 +198,7 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
-.footer-gmail {
-color: rgba(255, 255, 255, 0.60);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.71; 
-letter-spacing: 0.42px;
-}
-.footer-num {
+.footer-contacts {
 color: rgba(255, 255, 255, 0.60);
 font-size: 14px;
 font-style: normal;
