@@ -131,6 +131,28 @@
 .advantages-item{
     position: relative;
 }
+
+.advantages-item::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: var(--section4-color);
+    margin-bottom: 30px;
+    background-image: url(./img/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.advantages-item:nth-child(2)::before{
+    background-image: url(./img/clock.png);
+}
+.advantages-item:nth-child(3)::before{
+    background-image: url(./img/diagram.png);
+}
+.advantages-item:nth-child(4)::before{
+    background-image: url(./img/astronaut.png);
+}
 .advantages-list{
     display: flex;
     gap: 30px;
