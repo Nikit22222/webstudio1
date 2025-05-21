@@ -8,6 +8,7 @@
     --main2-color: #F5F4FA;
     --footer-color: #2F303A;
     --border-color: #EEE;
+    --header_border-color: #ECECEC;
 }
 .container{
     width: 1200px;
@@ -23,6 +24,7 @@
     background: var(--main-color);
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--header_border-color);
 }
 .header-web{
     color: var(--почта-color);
@@ -62,6 +64,9 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+.active{
+    color: var(--почта-color);
 }
 .header-contacts{
     display: flex;
@@ -125,20 +130,20 @@
 .projects-container{
     flex-basis: calc((100% - 60px) / 3);
     background: #FFF;
-    height: 404px;
-    width: 370px;
+    height: auto;
+    width: 100%;
+    outline: 1px solid var(--border-color);
 } 
 .projects-container:hover{
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .projects-img {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
 }
 .projets-link {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 2;

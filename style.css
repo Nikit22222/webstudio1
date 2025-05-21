@@ -6,6 +6,7 @@
     --section4-color: #F5F4FA;
     --main-color: #ffffff;
     --logo-color: #000;
+    --header_border-color: #ECECEC;
 }
 .container{
     width: 1200px;
@@ -21,6 +22,7 @@
     background: var(--main-color);
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--header_border-color);
 }
 .header-web{
     color: var(--посилання-color);
@@ -61,6 +63,9 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
+.active{
+    color: var(--посилання-color);
+}
 .header-contacts{
     display: flex;
     gap: 50px;
@@ -88,7 +93,7 @@
 }
 /*hero*/
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40) , rgba(47, 48, 58, 0.40)) , url(./img/Hero-backround.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40) , rgba(47, 48, 58, 0.40)) , url(./img/hero-backround.webp);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
