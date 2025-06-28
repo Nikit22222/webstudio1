@@ -7,6 +7,7 @@
     --main-color: #ffffff;
     --logo-color: #000;
     --header_border-color: #ECECEC;
+    --client-color: #AFB1B8;
 }
 .container{
     width: 1200px;
@@ -63,6 +64,18 @@ body{
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
+.header-icon{
+    width: 16px;
+    height: 12px;
+    fill: var(--text-color);
+}
+.header-item:last-child{
+    .header-icon{
+            width: 16px;
+            height: 12px;
+            fill: var(--text-color);
+    }
+}
 .active{
     color: var(--посилання-color);
 }
@@ -82,14 +95,15 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .header-contact:hover {
     color: var(--посилання-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
+    .header-icon{
+        fill: var(--посилання-color);
+    }
 }
 /*hero*/
 .hero {
@@ -230,15 +244,12 @@ body{
 .team-img {
     width: 270px;
     height: 260px;
-    flex-shrink: 0;
 }
 .team-member{
     border-radius: 0px 0px 4px 4px;
     background-color: var(--main-color);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     width: 270px;
-    flex-shrink: 0;
-    height: 368px;
 }
 .team-name {
     color: var(--text2-color);
@@ -253,6 +264,7 @@ body{
 .team-identity{
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: var(--main-color);
 }
 .team-text {
     color: var(--text-color);
@@ -262,6 +274,70 @@ body{
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
+}
+.team-items{
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+}
+.team-icon{
+    fill: var(--client-color);
+    width: 20px;
+    height: 20px;
+}
+.team-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-link:hover{
+    background-color: var(--посилання-color);
+    .team-icon{
+        fill: var(--main-color);
+    }
+}
+/*client*/
+.client{
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-title{
+    color: var(--text2-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.client-list{
+    display: flex;
+    gap: 30px;
+}
+.client-link{
+    border-radius: 4px;
+    border: 1px solid var(--client-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--client-color);
+    width: 170px;
+    height: 92px;
+}
+.client-link:hover{
+    border: 1px solid var(--посилання-color);
+    .client-icon{
+        fill: var(--посилання-color);
+    }
+}
+.client-icon{
+    width: 106px;
+    height: 60px;
 }
 /*footer*/
 .footer-web{
@@ -303,7 +379,6 @@ body{
 }
 .footer-title {
     color: var(--main-color);
-    font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
