@@ -404,6 +404,9 @@ body{
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
+.footer-container{
+    margin-left: 70px;
+}
 .footer-title-2{
     color: var(--main-color);
     font-size: 14px;
@@ -411,13 +414,14 @@ body{
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .footer-list-2{
-
-}
-.footer-item-2{
     display: flex;
     gap: 10px;
+}
+.footer-item-2{
+
 }
 .footer-link{
     display: flex;
