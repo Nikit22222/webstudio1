@@ -9,6 +9,7 @@
     --footer-color: #2F303A;
     --border-color: #EEE;
     --header_border-color: #ECECEC;
+    --poswork: rgba(255, 255, 255, 0.10);
 }
 .container{
     width: 1200px;
@@ -65,20 +66,20 @@ body{
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
-.header-contact:nth-of-type(1){
+.header-icon{
+        fill: var(--підпис-color);
+        margin-right: 10px;
+}
+.header-item:nth-of-type(1){
     .header-icon{
         width: 16px;
         height: 12px;
-        fill: var(--підпис-color);
-        margin-right: 10px;
     }
 }
-.header-contact:nth-of-type(2){
+.header-item:nth-of-type(2){
     .header-icon{
         width: 10px;
         height: 16px;   
-        margin-right: 10px;
-        fill: var(--підпис-color);
     }
 }
 .header-contact:hover {
@@ -107,6 +108,8 @@ body{
     line-height: 1.14;
     letter-spacing: 0.28px;
     gap: 10px;
+    display: flex;
+    align-items: center;
 }
 /*Projects Section*/
 .projects {
@@ -247,6 +250,12 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 }
+.footer-container{
+    margin-left: 70px;
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 275px !important;
+}
 .footer-title-2{
     color: var(--main-color);
     font-size: 14px;
@@ -254,11 +263,9 @@ letter-spacing: 0.42px;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .footer-list-2{
-
-}
-.footer-item-2{
     display: flex;
     gap: 10px;
 }
@@ -272,7 +279,7 @@ letter-spacing: 0.42px;
     height: 44px;
 }
 .footer-link:hover{
-    background-color: var(--почта-color);
+    background-color: var(--посилання-color);
 }
 .footer-icon{
     width: 20px;
