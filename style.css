@@ -8,6 +8,7 @@
     --logo-color: #000;
     --header_border-color: #ECECEC;
     --client-color: #AFB1B8;
+    --poswork-color: rgba(47, 48, 58, 0.80);
 }
 .container{
     width: 1200px;
@@ -218,7 +219,22 @@ body{
 .work-img {
     width: 370px;
     height: 294px;
-    flex-shrink: 0;
+}
+.work-text{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px; 
+    background-color: var(--poswork-color);
+    width: 370px;
+    height: 70px;
+    margin-top: 224px;
 }
 .work-list{
     display: flex;
@@ -406,6 +422,9 @@ body{
 }
 .footer-container{
     margin-left: 70px;
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 275px !important;
 }
 .footer-title-2{
     color: var(--main-color);
@@ -419,9 +438,6 @@ body{
 .footer-list-2{
     display: flex;
     gap: 10px;
-}
-.footer-item-2{
-
 }
 .footer-link{
     display: flex;
