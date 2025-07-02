@@ -65,20 +65,20 @@ body{
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
+.header-icon{
+        fill: var(--text-color);
+        margin-right: 10px;
+}
 .header-item:nth-of-type(1){
     .header-icon{
         width: 16px;
         height: 12px;
-        fill: var(--text-color);
-        margin-right: 10px;
     }
 }
 .header-item:nth-of-type(2){
     .header-icon{
         width: 10px;
         height: 16px;   
-        margin-right: 10px;
-        fill: var(--text-color);
     }
 }
 .active{
