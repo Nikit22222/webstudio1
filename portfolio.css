@@ -65,6 +65,28 @@ body{
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
+.header-contact:nth-of-type(1){
+    .header-icon{
+        width: 16px;
+        height: 12px;
+        fill: var(--підпис-color);
+        margin-right: 10px;
+    }
+}
+.header-contact:nth-of-type(2){
+    .header-icon{
+        width: 10px;
+        height: 16px;   
+        margin-right: 10px;
+        fill: var(--підпис-color);
+    }
+}
+.header-contact:hover {
+    color: var(--почта-color);
+    .header-icon{
+        fill: var(--почта-color);
+    }
+}
 .active{
     color: var(--почта-color);
 }
@@ -84,11 +106,8 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    gap: 10px;
 }
-.header-contact:hover {
-    color: var(--почта-color);
-}
-
 /*Projects Section*/
 .projects {
     background: var(--main-color);
@@ -227,4 +246,36 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
+}
+.footer-title-2{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-list-2{
+
+}
+.footer-item-2{
+    display: flex;
+    gap: 10px;
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.footer-link:hover{
+    background-color: var(--почта-color);
+}
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--main-color);
 }
