@@ -251,7 +251,7 @@ letter-spacing: 0.42px;
 }
 .footer-container{
     display: flex;
-    align-self: baseline;
+    align-items: baseline;
     gap: 70px;
 }
 .footer-list{
