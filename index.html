@@ -44,7 +44,7 @@
     <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
     </div>
     </section>
     <!--section 2-->
@@ -352,8 +352,35 @@
                 </li>
             </ul>
                 </div>
+ <div data-modal class="backdrop is-hidden">
+    <div class="model">
+        <button class="model-close" data-modal-close type="button"><svg class="model-icon">
+        <use href="./symbol-defs.svg#icon-close"></use>
+        </svg></button>
+         <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form">
+                <label class="model-label">Ім'я
+                <input class="model-input" type="text">
+                </label>
+                <label class="model-label">Телефон
+                <input class="model-input" type="tel">
+                </label>
+                <label class="model-label">Пошта
+                <input class="model-input" type="email">
+                </label>
+                <label class="model-label">Коментар
+                <textarea placeholder="Введіть текст" class="model-comment"></textarea>
+                </label>
+                <label class="model-label-2">
+                    <input type="checkbox" class="model-checkbox">
+                    <p class="model-text">Погоджуюся з розсилкою та приймаю <span class="model-span">Умови договору</span></p>
+                </label>
+            </form>
+            <button type="button" class="model-send">Відправити</button>
+</div>
+    </div>
+    <script type="module" src="./js/model.js"></script>
             </div>
-        </div>
     </footer>
 </body>
 </html>
