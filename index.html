@@ -352,6 +352,15 @@
                 </li>
             </ul>
                 </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-captitle">Підпишіться на розсилку</h3>
+                <form class="footer-form">
+                    <input type="email" class="footer-input" placeholder="E-mail" required>
+                    <button type="button" class="footer-button">Підписатися <svg class="footer-plane">
+                        <use href="./symbol-defs.svg#icon-send"></use>
+                    </svg></button>
+                </form>
+            </div>
  <div data-modal class="backdrop is-hidden">
     <div class="model">
         <button class="model-close" data-modal-close type="button"><svg class="model-icon">
@@ -360,25 +369,35 @@
          <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal-form">
                 <label class="model-label">Ім'я
-                <input class="model-input" type="text">
+                <input class="model-input" id="name" type="text" required>
+                <svg class="model-icon-2">
+                    <use href="./symbol-defs.svg#icon-person"></use>
+                </svg>
                 </label>
                 <label class="model-label">Телефон
-                <input class="model-input" type="tel">
+                <input class="model-input" type="tel" required>
+                <svg class="model-icon-2">
+                    <use href="./symbol-defs.svg#icon-phone"></use>
+                </svg>
                 </label>
                 <label class="model-label">Пошта
-                <input class="model-input" type="email">
+                <input class="model-input" type="email" required>
+                <svg class="model-icon-2">
+                    <use href="./symbol-defs.svg#icon-email"></use>
+                </svg>
                 </label>
                 <label class="model-label">Коментар
                 <textarea placeholder="Введіть текст" class="model-comment"></textarea>
                 </label>
                 <label class="model-label-2">
-                    <input type="checkbox" class="model-checkbox">
-                    <p class="model-text">Погоджуюся з розсилкою та приймаю <span class="model-span">Умови договору</span></p>
+                    <input type="checkbox" class="model-checkbox" required>
+                    <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
+                    <a href="#" class="model-span">Умови договору</a>
                 </label>
             </form>
-            <button type="button" class="model-send">Відправити</button>
-</div>
-    </div>
+            <button type="button" class="model-link">Відправити</button>
+                </div>
+        </div>
     <script type="module" src="./js/model.js"></script>
             </div>
     </footer>
