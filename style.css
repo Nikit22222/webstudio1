@@ -57,6 +57,7 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    position: relative;
 }
 .header-link:hover {
     color: var(--посилання-color);
@@ -83,6 +84,18 @@ body{
 }
 .active{
     color: var(--посилання-color);
+}
+ .active::after{
+    height: 4px;
+    border-radius: 2px;
+    background: var(--посилання-color);
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+} 
+.active:hover::after{
+    width: 100%;
 }
 .header-contacts{
     display: flex;
@@ -459,9 +472,6 @@ body{
     width: 20px;
     height: 20px;
     fill: var(--main-color);
-}
-.footer-subscribe{
-
 }
 .footer-captitle{
     color: var(--main-color);
