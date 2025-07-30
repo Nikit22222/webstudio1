@@ -66,10 +66,10 @@ body{
     color: var(--почта-color);
 }
 .header-icon{
-        fill: var(--підпис-color);
-        transition-property: width,height;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--підпис-color);
+    transition-property: width,height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-item:nth-of-type(1){
     .header-icon{
@@ -91,6 +91,9 @@ body{
 }
 .active{
     color: var(--почта-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active::after{
     height: 4px;
@@ -126,6 +129,12 @@ body{
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact:hover {
+    color: var(--почта-color);
+    .header-icon{
+        fill: var(--почта-color);
+    }
 }
 /*Projects Section*/
 .projects {
@@ -301,7 +310,9 @@ letter-spacing: 0.42px;
 .footer-container{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+}
+.footer-location{
+    margin-right: 70px;
 }
 .footer-list{
     margin-top: 20px;
@@ -343,6 +354,9 @@ letter-spacing: 0.42px;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
+.footer-social{
+    margin-right: 93px;
+}
 .footer-title-2{
     color: var(--main-color);
     font-size: 14px;
@@ -374,5 +388,60 @@ letter-spacing: 0.42px;
 .footer-icon{
     width: 20px;
     height: 20px;
+    fill: var(--main-color);
+}
+.footer-captitle{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-form{
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+}
+.footer-input{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25; /* 125% */
+    letter-spacing: 0.48px;
+    display: flex;
+    width: 47px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 295px 15px 16px;
+}
+.footer-button{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9; /* 187.5% */
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: var(--почта-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.footer-plane{
+    width: 24px;
+    height: 24px;
     fill: var(--main-color);
 }
