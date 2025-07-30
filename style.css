@@ -85,9 +85,6 @@ body{
 }
 .active{
     color: var(--посилання-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  .active::after{
     height: 4px;
@@ -97,9 +94,14 @@ body{
     content: "";
     bottom: -35px;
     left: 0;
+    transform: scale(0);
+    transition-property: transform,width,height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .active:hover::after{
     width: 100%;
+    transform: scale(1);
 }
 .header-contacts{
     display: flex;

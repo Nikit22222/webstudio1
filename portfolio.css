@@ -189,12 +189,15 @@ body{
 } 
 .projects-container-2{
     position: relative;
+    overflow: hidden;
 }
 .projects-container:hover{
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
       .projects-img-text{
         opacity: 1;
         transition-duration: 0.350s;
+        overflow: visible;
+        transform: translateY(0);
       }
 }
 .projects-img-text{
@@ -211,9 +214,11 @@ body{
     opacity: 0;
     width: 100%;
     height: auto;
-    transition-property: opacity,transition-duration;
+    transform: translateY(100%);
+    transition-property: opacity,transform,box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .projects-img {
     width: 100%;
