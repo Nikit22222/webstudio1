@@ -1,4 +1,3 @@
-@charset "UTF-8";
 ul {
   list-style: none;
   padding: 0;
@@ -20,27 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-:root {
-  --посилання-color: #2196F3;
-  --text-color: #757575;
-  --text2-color: #212121;
-  --section1-color: #2F303A;
-  --section4-color: #F5F4FA;
-  --logo-color: #000;
-  --header_border-color: #ECECEC;
-  --client-color: #AFB1B8;
-  --poswork-color: rgba(47, 48, 58, 0.80);
-  --backdrop-color: rgba(0, 0, 0, 0.20);
-  --text2-color: #000;
-  --text3-color: #212121;
-  --footer-color: #2F303A;
-  --main-color: #ffffff;
-  --main2-color: #F5F4FA;
-  --footer-color: #2F303A;
-  --border-color: #EEE;
-  --poswork: rgba(255, 255, 255, 0.10);
-}
-
 body {
   font-family: "Roboto";
 }
@@ -53,14 +31,14 @@ body {
 }
 
 .header {
-  background: var(--main-color);
+  background: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid var(--header_border-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-web {
-  color: var(--посилання-color);
+  color: #2196F3;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -80,12 +58,12 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
-  color: var(--logo-color);
+  color: #000;
   margin-right: 93px;
 }
 
 .header-link {
-  color: var(--text3-color);
+  color: #212121;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -98,11 +76,11 @@ body {
 }
 
 .header-link:hover {
-  color: var(--посилання-color);
+  color: #2196F3;
 }
 
 .header-icon {
-  fill: var(--text-color);
+  fill: #757575;
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -119,13 +97,13 @@ body {
 }
 
 .active {
-  color: var(--посилання-color);
+  color: #2196F3;
 }
 
 .active::after {
   height: 4px;
   border-radius: 2px;
-  background: var(--посилання-color);
+  background: #2196F3;
   position: absolute;
   content: "";
   bottom: -35px;
@@ -153,7 +131,7 @@ body {
 }
 
 .header-contact {
-  color: var(--text-color);
+  color: #757575;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -168,10 +146,10 @@ body {
 }
 
 .header-contact:hover {
-  color: var(--посилання-color);
+  color: #2196F3;
 }
 .header-contact:hover .header-icon {
-  fill: var(--посилання-color);
+  fill: #2196F3;
 }
 
 .hero {
@@ -187,7 +165,7 @@ body {
 .hero-title {
   width: 696px;
   flex-shrink: 0;
-  color: var(--main-color);
+  color: #ffffff;
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -205,9 +183,9 @@ body {
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: var(--посилання-color);
+  background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -216,7 +194,7 @@ body {
 }
 
 .advantages {
-  background: var(--main-color);
+  background: #ffffff;
   padding-top: 94px;
 }
 
@@ -230,7 +208,7 @@ body {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: var(--section4-color);
+  background: #F5F4FA;
   margin-bottom: 30px;
   background-image: url(../img/antenna.png);
   background-repeat: no-repeat;
@@ -255,7 +233,7 @@ body {
 }
 
 .advantages-title {
-  color: var(--text3-color);
+  color: #212121;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -267,7 +245,7 @@ body {
 }
 
 .advantages-text {
-  color: var(--text-color);
+  color: #757575;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -277,13 +255,13 @@ body {
 }
 
 .work {
-  background: var(--main-color);
+  background: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .work-title {
-  color: var(--text2-color);
+  color: #000;
   text-align: center;
   font-size: 36px;
   font-style: normal;
@@ -299,7 +277,7 @@ body {
 }
 
 .work-text {
-  color: var(--main-color);
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -309,7 +287,7 @@ body {
   position: absolute;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: var(--poswork-color);
+  background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
   bottom: 0;
@@ -325,7 +303,7 @@ body {
 }
 
 .team {
-  background: var(--section4-color);
+  background: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -336,7 +314,7 @@ body {
 }
 
 .team-title {
-  color: var(--text3-color);
+  color: #212121;
   text-align: center;
   font-size: 36px;
   font-style: normal;
@@ -353,13 +331,13 @@ body {
 
 .team-member {
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--main-color);
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   width: 270px;
 }
 
 .team-name {
-  color: var(--text3-color);
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -372,11 +350,11 @@ body {
 .team-identity {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: var(--main-color);
+  background-color: #ffffff;
 }
 
 .team-text {
-  color: var(--text-color);
+  color: #757575;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -393,7 +371,7 @@ body {
 }
 
 .team-icon {
-  fill: var(--client-color);
+  fill: #AFB1B8;
   width: 20px;
   height: 20px;
   transition-property: fill;
@@ -414,10 +392,10 @@ body {
 }
 
 .team-link:hover {
-  background-color: var(--посилання-color);
+  background-color: #2196F3;
 }
 .team-link:hover .team-icon {
-  fill: var(--main-color);
+  fill: #ffffff;
 }
 
 .client {
@@ -427,7 +405,7 @@ body {
 }
 
 .client-title {
-  color: var(--text3-color);
+  color: #212121;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -443,7 +421,7 @@ body {
 
 .client-link {
   border-radius: 4px;
-  border: 1px solid var(--client-color);
+  border: 1px solid #AFB1B8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,23 +434,23 @@ body {
 }
 
 .client-link:hover {
-  border: 1px solid var(--посилання-color);
+  border: 1px solid #2196F3;
 }
 .client-link:hover .client-icon {
-  fill: var(--посилання-color);
+  fill: #2196F3;
 }
 
 .client-icon {
   width: 106px;
   height: 60px;
-  fill: var(--client-color);
+  fill: #AFB1B8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-web {
-  color: var(--text2-color);
+  color: #000;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -481,7 +459,7 @@ body {
 }
 
 .footer-web {
-  color: var(--посилання-color);
+  color: #2196F3;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -490,7 +468,7 @@ body {
 }
 
 .footer {
-  background: var(--section1-color);
+  background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -515,7 +493,7 @@ body {
 }
 
 .footer-Web {
-  color: var(--посилання-color);
+  color: #2196F3;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -524,7 +502,7 @@ body {
 }
 
 .footer-title {
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -533,7 +511,7 @@ body {
 }
 
 .footer-maps {
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -555,7 +533,7 @@ body {
 }
 
 .footer-title-2 {
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -583,17 +561,17 @@ body {
 }
 
 .footer-link:hover {
-  background-color: var(--посилання-color);
+  background-color: #2196F3;
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--main-color);
+  fill: #ffffff;
 }
 
 .footer-captitle {
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -628,7 +606,7 @@ body {
 }
 
 .footer-button {
-  color: var(--main-color);
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -637,7 +615,7 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: var(--посилання-color);
+  background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   gap: 10px;
   display: flex;
@@ -649,11 +627,11 @@ body {
 .footer-plane {
   width: 24px;
   height: 24px;
-  fill: var(--main-color);
+  fill: #ffffff;
 }
 
 .projects {
-  background: var(--main-color);
+  background: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -673,8 +651,8 @@ body {
 
 .projects-item {
   border-radius: 4px;
-  background: var(--main2-color);
-  color: var(--text3-color);
+  background: #F5F4FA;
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -691,8 +669,8 @@ body {
 }
 
 .projects-item:hover {
-  background-color: var(--посилання-color);
-  color: var(--main-color);
+  background-color: #2196F3;
+  color: #ffffff;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -701,7 +679,7 @@ body {
   background: #FFF;
   height: auto;
   width: 100%;
-  outline: 1px solid var(--border-color);
+  outline: 1px solid #EEE;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -723,7 +701,7 @@ body {
 }
 
 .projects-img-text {
-  color: var(--main-color);
+  color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   height: 294px;
@@ -750,7 +728,7 @@ body {
 }
 
 .projets-link {
-  color: var(--text3-color);
+  color: #212121;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -760,7 +738,7 @@ body {
 }
 
 .projets-text {
-  color: var(--text-color);
+  color: #757575;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -796,11 +774,11 @@ body {
 }
 
 .model {
-  background-color: var(--main-color);
+  background-color: #ffffff;
   width: 528px;
   height: 581px;
   border-radius: 4px;
-  background: var(--main-color);
+  background: #ffffff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
@@ -850,7 +828,7 @@ body {
 }
 
 .model-close:is(:hover, :focus) .model-icon {
-  fill: var(--посилання-color);
+  fill: #2196F3;
 }
 
 .model-title {
@@ -881,12 +859,12 @@ body {
 
 .model-input:is(:hover, :focus) {
   border: 1px solid #2196F3;
-  fill: var(--посилання-color);
+  fill: #2196F3;
 }
 
 .model-input:hover + .model-icon-2,
 .model-input:focus + .model-icon-2 {
-  fill: var(--посилання-color);
+  fill: #2196F3;
 }
 
 .model-input {
@@ -907,7 +885,7 @@ body {
 .model-icon-2 {
   width: 18px;
   height: 18px;
-  fill: #212121;
+  fill: #000;
   position: absolute;
   top: 30px;
   left: 12px;
@@ -936,7 +914,7 @@ body {
 .model-checkbox {
   width: 16px;
   height: 15px;
-  accent-color: var(--посилання-color);
+  accent-color: #2196F3;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -947,7 +925,7 @@ body {
 }
 
 .model-text {
-  color: var(--text-color);
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7; /* 171.429% */
@@ -956,7 +934,7 @@ body {
 }
 
 .model-span {
-  color: var(--посилання-color);
+  color: #2196F3;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -972,7 +950,7 @@ body {
 }
 
 .model-link {
-  color: var(--main-color);
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;

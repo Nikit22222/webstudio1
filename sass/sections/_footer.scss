@@ -1,5 +1,5 @@
 .footer-web{
-    color: var(--text2-color);
+    color: $text2-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -7,7 +7,7 @@
     letter-spacing: 0.28px;
 }
 .footer-web{
-    color: var(--посилання-color);
+    color: $посилання-color;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -15,7 +15,7 @@
     letter-spacing: 0.78px;
 }
 .footer {
-    background: var(--section1-color);
+    background: $section1-color;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -35,7 +35,7 @@
     width: 231px;
 }
 .footer-Web {
-    color: var(--посилання-color);
+    color: $посилання-color;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -43,7 +43,7 @@
     letter-spacing: 0.78px;
 }
 .footer-title {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -51,7 +51,7 @@
     letter-spacing: 0.78px;
 }
 .footer-maps {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -70,7 +70,7 @@
     margin-right: 93px;
 }
 .footer-title-2{
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -95,15 +95,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover{
-    background-color: var(--посилання-color);
+    background-color: $посилання-color;
 }
 .footer-icon{
     width: 20px;
     height: 20px;
-    fill: var(--main-color);
+    fill: $main-color;
 }
 .footer-captitle{
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -135,7 +135,7 @@
     padding: 15px 295px 15px 16px;
 }
 .footer-button{
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -144,7 +144,7 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: var(--посилання-color);
+    background: $посилання-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     gap: 10px;
     display: flex;
@@ -155,5 +155,5 @@
 .footer-plane{
     width: 24px;
     height: 24px;
-    fill: var(--main-color);
+    fill: $main-color;
 }

@@ -1,5 +1,5 @@
 .projects {
-    background: var(--main-color);
+    background: $main-color;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -16,8 +16,8 @@
 }
 .projects-item{
     border-radius: 4px;
-    background: var(--main2-color);
-    color: var(--text3-color);
+    background: $main2-color;
+    color: $text3-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -33,8 +33,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-item:hover {
-    background-color: var(--посилання-color);
-    color: var(--main-color);
+    background-color: $посилання-color;
+    color: $main-color;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 
 }
@@ -43,7 +43,7 @@
     background: #FFF;
     height: auto;
     width: 100%;
-    outline: 1px solid var(--border-color);
+    outline: 1px solid $border-color;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -62,7 +62,7 @@
       }
 }
 .projects-img-text{
-    color: var(--main-color);
+    color: $main-color;
     background: rgba(33, 150, 243, 0.90);
     font-size: 18px;
     height: 294px;
@@ -87,7 +87,7 @@
     z-index: 0;
 }
 .projets-link {
-    color: var(--text3-color);
+    color: $text3-color;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -96,7 +96,7 @@
     line-height: normal;
 }
 .projets-text {
-    color: var(--text-color);
+    color: $text-color;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

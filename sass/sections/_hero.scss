@@ -10,7 +10,7 @@
 .hero-title {
     width: 696px;
     flex-shrink: 0;
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-size: 44px;
     font-style: normal;
@@ -27,9 +27,9 @@
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: var(--посилання-color);
+    background: $посилання-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--main-color);
+    color: $main-color;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

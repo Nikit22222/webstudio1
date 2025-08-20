@@ -1,10 +1,10 @@
 .work {
-    background: var(--main-color);
+    background: $main-color;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .work-title {
-    color: var(--text2-color);
+    color: $text2-color;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -19,7 +19,7 @@
 
 }
 .work-text{
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -29,7 +29,7 @@
     position: absolute;
     padding-top: 27px;
     padding-bottom: 27px; 
-    background-color: var(--poswork-color);
+    background-color: $poswork-color;
     width: 370px;
     height: 70px;
     bottom: 0;
