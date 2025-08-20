@@ -180,7 +180,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
 }
 
@@ -789,6 +789,10 @@ body {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.is-hidden .modal {
+  transform: translate(0) rotate(720deg) scale(0);
 }
 
 .model {

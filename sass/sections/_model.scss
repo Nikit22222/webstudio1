@@ -11,6 +11,9 @@
     opacity: 0;
     pointer-events: none;
 }
+.is-hidden .modal {
+    transform: translate(0) rotate(720deg) scale(0);
+}
 .model{
     background-color: var(--main-color);
     width: 528px;
