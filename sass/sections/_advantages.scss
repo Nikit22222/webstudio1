@@ -1,53 +1,68 @@
 .advantages {
     background: $main-color;
     padding-top: 94px;
-}
-.advantages-item{
-    position: relative;
-}
 
-.advantages-item::before{
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background: $section4-color;
-    margin-bottom: 30px;
-    background-image: url(../img/antenna.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.advantages-item:nth-child(2)::before{
-    background-image: url(../img/clock.png);
-}
-.advantages-item:nth-child(3)::before{
-    background-image: url(../img/diagram.png);
-}
-.advantages-item:nth-child(4)::before{
-    background-image: url(../img/astronaut.png);
-}
-.advantages-list{
-    display: flex;
-    gap: 30px;
-}
-.advantages-title {
-    color: $text3-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    width: 270px;
-}
-.advantages-text {
-    color: $text-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71; 
-    letter-spacing: 0.42px;
-    width: 270px;
+
+        &__item{
+        position: relative;
+        }
+
+
+    &__item::before{
+        content: "";
+        display: block;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background: $section4-color;
+        margin-bottom: 30px;
+        background-image: url(../img/antenna.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+    &__item:nth-child(2)::before{
+        background-image: url(../img/clock.png);
+    }
+
+
+    &__item:nth-child(3)::before{
+        background-image: url(../img/diagram.png);
+    }
+
+
+    &__item:nth-child(4)::before{
+        background-image: url(../img/astronaut.png);
+    }
+
+
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &__title {
+        color: $text3-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        width: 270px;
+    }
+
+
+    &__text {
+        color: $text-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.71; 
+        letter-spacing: 0.42px;
+        width: 270px;
+    }
 }

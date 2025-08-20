@@ -37,6 +37,16 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
+.header-title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+  color: #000;
+  margin-right: 93px;
+}
+
 .header-web {
   color: #2196F3;
   font-size: 26px;
@@ -50,16 +60,6 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-}
-
-.header-title {
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
-  color: #000;
-  margin-right: 93px;
 }
 
 .header-link {
@@ -161,8 +161,7 @@ body {
   background-size: cover;
   text-align: center;
 }
-
-.hero-title {
+.hero__title {
   width: 696px;
   flex-shrink: 0;
   color: #ffffff;
@@ -177,8 +176,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero-button {
+.hero__button {
   width: 216px;
   height: 50px;
   flex-shrink: 0;
@@ -197,12 +195,10 @@ body {
   background: #ffffff;
   padding-top: 94px;
 }
-
-.advantages-item {
+.advantages__item {
   position: relative;
 }
-
-.advantages-item::before {
+.advantages__item::before {
   content: "";
   display: block;
   width: 270px;
@@ -214,25 +210,20 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.advantages-item:nth-child(2)::before {
+.advantages__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
 }
-
-.advantages-item:nth-child(3)::before {
+.advantages__item:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
-
-.advantages-item:nth-child(4)::before {
+.advantages__item:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
-
-.advantages-list {
+.advantages__list {
   display: flex;
   gap: 30px;
 }
-
-.advantages-title {
+.advantages__title {
   color: #212121;
   font-size: 14px;
   font-style: normal;
@@ -243,8 +234,7 @@ body {
   margin-bottom: 10px;
   width: 270px;
 }
-
-.advantages-text {
+.advantages__text {
   color: #757575;
   font-size: 14px;
   font-style: normal;
