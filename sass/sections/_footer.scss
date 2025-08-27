@@ -1,159 +1,201 @@
-.footer-web{
-    color: $text2-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-}
-.footer-web{
-    color: $посилання-color;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-}
+
+/*footer*/
 .footer {
     background: $section1-color;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.footer-container{
+
+
+    &__container{
     display: flex;
     align-items: baseline;
-}
-.footer-location{
-    margin-right: 70px;
-}
-.footer-list{
-    margin-top: 20px;
-}
-.footer-item{
-    margin-bottom: 9px;
-    height: 21px;
-    width: 231px;
-}
-.footer-Web {
-    color: $посилання-color;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-}
-.footer-title {
-    color: $main-color;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-}
-.footer-maps {
-    color: $main-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
-.footer-contacts {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
-.footer-social{
-    margin-right: 93px;
-}
-.footer-title-2{
-    color: $main-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.footer-list-2{
-    display: flex;
-    gap: 10px;
-}
-.footer-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgba(255, 255, 255, 0.10);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link:hover{
-    background-color: $посилання-color;
-}
-.footer-icon{
-    width: 20px;
-    height: 20px;
-    fill: $main-color;
-}
-.footer-captitle{
-    color: $main-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-.footer-form{
-    display: flex;
-    margin-top: 20px;
-    gap: 12px;
-}
-.footer-input{
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25; /* 125% */
-    letter-spacing: 0.48px;
-    display: flex;
-    width: 47px;
-    height: 20px;
-    flex-direction: column;
-    justify-content: center;
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px 295px 15px 16px;
-}
-.footer-button{
-    color: $main-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.9; /* 187.5% */
-    letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: $посилання-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-.footer-plane{
-    width: 24px;
-    height: 24px;
-    fill: $main-color;
+    }
+
+
+    &__web{
+        color: $text2-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.28px;
+    }
+// &__web{
+//     color: $посилання-color;
+//     font-size: 26px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: normal;
+//     letter-spacing: 0.78px;
+// }
+
+
+    &__location{
+        margin-right: 70px;
+    }
+
+
+    &__list{
+        margin-top: 20px;
+    }
+
+
+    &__item{
+        margin-bottom: 9px;
+        height: 21px;
+        width: 231px;
+    }
+
+
+    &__Web {
+        color: $посилання-color;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+    }
+
+
+    &__title {
+        color: $main-color;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+    }
+
+
+    &__maps {
+        color: $main-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+    }
+
+
+    &__contacts {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+    }
+
+
+    &__social{
+        margin-right: 93px;
+    }
+
+
+    &__title__2{
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+
+    &__list__2{
+        display: flex;
+        gap: 10px;
+    }
+
+
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    &__link:hover{
+        background-color: $посилання-color;
+    }
+
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+        fill: $main-color;
+    }
+
+    
+    &__captitle{
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    
+    &__form{
+        display: flex;
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    
+    &__input{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25; /* 125% */
+        letter-spacing: 0.48px;
+        display: flex;
+        width: 47px;
+        height: 20px;
+        flex-direction: column;
+        justify-content: center;
+        width: 358px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 15px 295px 15px 16px;
+    }
+
+    
+    &__button{
+        color: $main-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.9; /* 187.5% */
+        letter-spacing: 0.96px;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background: $посилання-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    
+    &__plane{
+        width: 24px;
+        height: 24px;
+        fill: $main-color;
+    }
 }

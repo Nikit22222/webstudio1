@@ -1,6 +1,8 @@
 @import "./base/reset";
 @import "./base/var";
 @import "./base/common";
+@import "./utils/mixin.scss";
+@import "./utils/placeholder.scss";
 @import "./base/container";
 @import "./sections/header";
 @import "./sections/hero";

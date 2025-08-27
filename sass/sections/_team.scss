@@ -2,83 +2,85 @@
     background: $section4-color;
     padding-top: 94px;
     padding-bottom: 94px;
+
+
+    &__title {
+        color: $text3-color;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
 }
-.team-list{
-    display: flex;
-    gap: 30px;
-}
-.team-title {
-    color: $text3-color;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
-.team-img {
-    width: 270px;
-    height: 260px;
-}
-.team-member{
-    border-radius: 0px 0px 4px 4px;
-    background-color: $main-color;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    width: 270px;
-}
-.team-name {
-    color: $text3-color;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-    margin-bottom: 10px;
-}
-.team-identity{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: $main-color;
-}
-.team-text {
-    color: $text-color;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-.team-items{
-    display: flex;
-    gap: 10px;
-    margin-top: 16px;
-    justify-content: center;
-}
-.team-icon{
-    fill: $client-color;
-    width: 20px;
-    height: 20px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-link{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-link:hover{
-    background-color: $посилання-color;
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+    &__member{
+        border-radius: 0px 0px 4px 4px;
+        background-color: $main-color;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+        width: 270px;
+    }
+    &__img {
+        width: 270px;
+        height: 260px;
+    }
+    &__identity{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: $main-color;
+    }
+    &__name {
+        color: $text3-color;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: $text-color;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+    }
+    &__items{
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+        justify-content: center;
+    }
     .team-icon{
-        fill: $main-color;
+        fill: $client-color;
+        width: 20px;
+        height: 20px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover{
+        background-color: $посилання-color;
+        .team-icon{
+            fill: $main-color;
+        }
     }
 }
