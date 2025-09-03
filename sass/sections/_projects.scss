@@ -1,69 +1,77 @@
 .projects {
-    background: $main-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.projects-sites{
-    display: flex;       
-    flex-wrap: wrap;     
-    gap: 30px; 
-}
-.projects-list{
+  background: $main-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
     justify-content: center;
     display: flex;
     margin-bottom: 50px;
     gap: 8px;
-}
-.projects-item{
+  }
+
+  &__sites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
     border-radius: 4px;
     background: $main2-color;
     color: $text3-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px; 
-    letter-spacing: 0.48px; 
+    line-height: 26px;
+    letter-spacing: 0.48px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
     display: block;
-    transition-property: background-color,color,box-shadow;
+    transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.projects-item:hover {
-    background-color: $посилання-color;
-    color: $main-color;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 
-}
-.projects-container{
+    &:hover {
+      background-color: $посилання-color;
+      color: $main-color;
+      box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__container {
     flex-basis: calc((100% - 60px) / 3);
-    background: #FFF;
+    background: #fff;
     height: auto;
     width: 100%;
     outline: 1px solid $border-color;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} 
-.projects-container-2{
-    position: relative;
-    overflow: hidden;
-}
-.projects-container:hover{
-      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-      .projects-img-text{
+
+    &:hover {
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+      .projects__excerpt {
         opacity: 1;
-        transition-duration: 0.350s;
+        transition-duration: 0.35s;
         overflow: visible;
         transform: translateY(0);
       }
-}
-.projects-img-text{
+    }
+  }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__excerpt {
     color: $main-color;
-    background: rgba(33, 150, 243, 0.90);
+    background: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     height: 294px;
     font-weight: 400;
@@ -75,18 +83,20 @@
     opacity: 0;
     width: 100%;
     height: auto;
-    transition-property: opacity,transform,box-shadow;
+    transition-property: opacity, transform, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: slide;
     transform: translateY(100%);
-}
-.projects-img {
+  }
+
+  &__img {
     width: 100%;
     height: auto;
     z-index: 0;
-}
-.projets-link {
+  }
+
+  &__link {
     color: $text3-color;
     font-size: 17px;
     font-style: normal;
@@ -94,19 +104,22 @@
     line-height: 2;
     letter-spacing: 1.08px;
     line-height: normal;
-}
-.projets-text {
+  }
+
+  &__text {
     color: $text-color;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.87; 
+    line-height: 1.87;
     letter-spacing: 0.48px;
     margin-top: 4px;
-}
-.team-identity{
+  }
+
+  &__identity {
     padding-left: 24px;
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
+  }
 }

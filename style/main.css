@@ -391,10 +391,10 @@ body {
 .client__link:hover {
   border: 1px solid #2196F3;
 }
-.client__link:hover .client-icon:hover {
+.client__link:hover .client__icon {
   fill: #2196F3;
 }
-.client .client-icon {
+.client__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
@@ -561,21 +561,18 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.projects-sites {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.projects-list {
+.projects__list {
   justify-content: center;
   display: flex;
   margin-bottom: 50px;
   gap: 8px;
 }
-
-.projects-item {
+.projects__sites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects__item {
   border-radius: 4px;
   background: #F5F4FA;
   color: #212121;
@@ -593,16 +590,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-item:hover {
+.projects__item:hover {
   background-color: #2196F3;
   color: #ffffff;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-
-.projects-container {
+.projects__container {
   flex-basis: calc((100% - 60px) / 3);
-  background: #FFF;
+  background: #fff;
   height: auto;
   width: 100%;
   outline: 1px solid #EEE;
@@ -610,23 +605,20 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-container-2 {
-  position: relative;
-  overflow: hidden;
-}
-
-.projects-container:hover {
+.projects__container:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-.projects-container:hover .projects-img-text {
+.projects__container:hover .projects__excerpt {
   opacity: 1;
   transition-duration: 0.35s;
   overflow: visible;
   transform: translateY(0);
 }
-
-.projects-img-text {
+.projects__box {
+  position: relative;
+  overflow: hidden;
+}
+.projects__excerpt {
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
@@ -646,14 +638,12 @@ body {
   animation-name: slide;
   transform: translateY(100%);
 }
-
-.projects-img {
+.projects__img {
   width: 100%;
   height: auto;
   z-index: 0;
 }
-
-.projets-link {
+.projects__link {
   color: #212121;
   font-size: 17px;
   font-style: normal;
@@ -662,8 +652,7 @@ body {
   letter-spacing: 1.08px;
   line-height: normal;
 }
-
-.projets-text {
+.projects__text {
   color: #757575;
   font-size: 16px;
   font-style: normal;
@@ -672,8 +661,7 @@ body {
   letter-spacing: 0.48px;
   margin-top: 4px;
 }
-
-.team-identity {
+.projects__identity {
   padding-left: 24px;
   padding-top: 20px;
   padding-right: 24px;
