@@ -9,24 +9,32 @@
 
 
     &__title {
-        width: 696px;
+        width: 360px;
         flex-shrink: 0;
         color: $main-color;
         text-align: center;
-        font-size: 44px;
         font-style: normal;
         font-weight: 900;
-        line-height: 1.36;
-        letter-spacing: 2.64px;
         text-transform: uppercase;
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 26px;
+        line-height: 1.61; /* 161.538% */
+        letter-spacing: 1.56px;
+
+
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36; /* 136.364% */
+            letter-spacing: 2.64px;
+            width: 696px;
+        }
     }
 
 
     &__button {
-        width: 216px;
+        width: 200px;
         height: 50px;
         flex-shrink: 0;
         border-radius: 4px;
@@ -38,5 +46,9 @@
         font-weight: 700;
         line-height: 1.87;
         letter-spacing: 0.96px;
+
+        @media screen and (min-width:1200px) {
+            width: 216px;
+        }
     }
 }

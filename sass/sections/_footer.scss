@@ -1,7 +1,7 @@
 
 /*footer*/
 .footer {
-    background: $section1-color;
+    background: $footer-color;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -20,14 +20,6 @@
         line-height: 1.14;
         letter-spacing: 0.28px;
     }
-// &__web{
-//     color: $посилання-color;
-//     font-size: 26px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: normal;
-//     letter-spacing: 0.78px;
-// }
 
 
     &__location{
@@ -92,7 +84,7 @@
     }
 
 
-    &__title__2{
+    &__cap{
         color: $main-color;
         font-size: 14px;
         font-weight: 700;
@@ -103,7 +95,7 @@
     }
 
 
-    &__list__2{
+    &__wrap{
         display: flex;
         gap: 10px;
     }

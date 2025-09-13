@@ -2,10 +2,16 @@
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
+    display: none;
+    
+    @media screen and (min-width:1200px) {
+        display: block;
+}
+    
 
 
     &__title{
-        color: $text3-color;
+        color: $text2-color;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
