@@ -1,20 +1,37 @@
 .projects {
   background: $main-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
   &__list {
-    justify-content: center;
-    display: flex;
     margin-bottom: 50px;
     gap: 8px;
-  }
+    width: 326px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+
+
+    @media screen and (min-width:768px) {
+      flex-wrap: none;
+      width: 100%;
+      justify-content: center;
+    }
+}
+
 
   &__sites {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
 
   &__item {
     border-radius: 4px;
@@ -34,6 +51,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:hover {
       background-color: $посилання-color;
       color: $main-color;
@@ -42,15 +60,29 @@
     }
   }
 
+
   &__container {
-    flex-basis: calc((100% - 60px) / 3);
     background: #fff;
     height: auto;
-    width: 100%;
+    // width: 100%;
     outline: 1px solid $border-color;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: 100%;
+
+    @media screen and (min-width:480px) {
+      flex-basis: 450px;
+    }
+
+    @media screen and (min-width:768px) {
+          flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+          flex-basis: calc((100% - 60px) / 3);
+    }
+
 
     &:hover {
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
@@ -64,10 +96,12 @@
     }
   }
 
+
   &__box {
     position: relative;
     overflow: hidden;
   }
+
 
   &__excerpt {
     color: $main-color;
@@ -90,11 +124,12 @@
     transform: translateY(100%);
   }
 
+
   &__img {
     width: 100%;
     height: auto;
-    z-index: 0;
-  }
+}
+
 
   &__link {
     color: $text2-color;
@@ -106,6 +141,7 @@
     line-height: normal;
   }
 
+
   &__text {
     color: $text-color;
     font-size: 16px;
@@ -115,6 +151,7 @@
     letter-spacing: 0.48px;
     margin-top: 4px;
   }
+
 
   &__identity {
     padding-left: 24px;

@@ -19,6 +19,11 @@
         <a href="./index.html" class="header__title">
                 <span class="header__web">Web</span>Studio
         </a>
+
+        <button type="button" class="header__btn" data-mobile-open><svg class="header__menu">
+            <use href="./symbol-defs.svg#icon-header-menu"></use>
+        </svg></button>
+        
         <nav class="nav">
             <ul class="header__contacts">
                 <li><a href="./index.html" class="header__link">Студія</a></li>
@@ -28,18 +33,40 @@
         </nav>
         <ul class="header__list">
             <li class="header__item">
-                <a href="mailto:info@devstudio.com" class="header__contact"><svg class="header-icon">
+                <a href="mailto:info@devstudio.com" class="header__contact"><svg class="header__icon">
                     <use href="./symbol-defs.svg#icon-envelope-header-1--"></use>
                 </svg> info@devstudio.com</a>
             </li>
             <li class="header__item">
-                <a href="tel:+380961111111" class="header__contact"><svg class="header-icon">
+                <a href="tel:+380961111111" class="header__contact"><svg class="header__icon">
                     <use href="./symbol-defs.svg#icon-smartphone-header-1"></use>
                 </svg> +38 096 111 11 11</a>
             </li>
         </ul>
+
+        <div class="mobile is-hidden" data-mobile>
+            <button type="button" class="mobile__close" data-mobile-close><svg class="mobile__icon">
+                <use href="./symbol-defs.svg#icon-close"></use>
+            </svg></button>
+            <ul class="mobile__list">
+                <li class="mobile__item"><a href="./index.html" class="mobile__link active">Студія</a></li>
+                <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Контакти</a></li>
+            </ul>
+            <ul class="mobile__items">
+                <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contacts">+38 096 111 11 11</a></li>
+                <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contacts">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile__wrap">
+                <li class="mobile__elem"><a href="" class="mobile__social">Instagramm</a></li>
+                <li class="mobile__elem"><a href="" class="mobile__social">Twitter</a></li>
+                <li class="mobile__elem"><a href="" class="mobile__social">Facebook</a></li>
+                <li class="mobile__elem"><a href="" class="mobile__social">LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
-    </header> 
+
+    </header>
             <!--section 1-->
             <main>
             <section class="projects">
@@ -147,7 +174,7 @@
             </section>
         </main>
         <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__container">
             <div class="footer__location">
@@ -209,7 +236,7 @@
                         <use href="./symbol-defs.svg#icon-send"></use>
                     </svg></button>
                 </form>
-            </div>
+            </div> -->
             
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

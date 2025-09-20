@@ -3,6 +3,10 @@
     padding-top: 94px;
     padding-bottom: 94px;
     display: none;
+
+    @media screen and (min-width:768px) {
+        display: block;
+}
     
     @media screen and (min-width:1200px) {
         display: block;
@@ -22,8 +26,16 @@
 
 
     &__list{
-        display: flex;
         gap: 30px;
+
+        @media screen and (min-width:768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
+        @media screen and (min-width:768px) {
+            display: flex;
+    }
 }
 
 
@@ -34,12 +46,15 @@
         justify-content: center;
         align-items: center;
         fill: $client-color;
-        width: 170px;
+        width: 226px;
         height: 92px;
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+        @media screen and (min-width:1200px) {
+            width: 170px;
+    }
 
         &:hover{
             border: 1px solid $посилання-color;
